@@ -5,7 +5,7 @@ var cake = {
   bakeTemp: "425 degrees",
   bakeTime: "45 minutes",
   customer: "Tommy",
-  decorate: function(updateFunction) {
+  decorate: function (updateFunction) {
     var status = "Decorating with " + this.topping + ". Ready to eat soon!"
     updateFunction(status)
     setTimeout(() => { updateFunction(serve.apply(this, "Happy Eating!", this.customer))}, 2000)
